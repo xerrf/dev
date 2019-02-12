@@ -1,0 +1,5 @@
+@mixin heading {
+    @include border-radius($round);
+    @include box-shadow(black 2px 2px 10px);
+    background: white;
+}

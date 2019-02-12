@@ -1,0 +1,22 @@
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+h1 {
+    color: $headerText;
+}
+
+header {
+    p {
+        color: $headerText;
+    }
+}
+
+h2 {
+    color: $headerText;
+}
+
+ul, p {
+    color: $bodyText;
+}

@@ -1,0 +1,14 @@
+/*
+*/
+
+
+body {
+    background-color: lightgoldenrodyellow;
+    @include background(linear-gradient(to bottom, red, blue));
+}
+
+header {
+    h1 { 
+    @include heading;
+    }
+}
