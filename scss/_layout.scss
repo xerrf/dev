@@ -1,0 +1,76 @@
+
+header {
+    grid-area: intro;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    p.links {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        align-content: space-between;
+        margin: 0.25em;
+        a {
+            margin: 0em 75%;
+        }
+    }
+}
+
+section#proj1 {
+    grid-area: p1;
+}
+
+section#proj2 {
+    grid-area: p2;
+}
+
+section#proj3 {
+    grid-area: p3;
+}
+
+section#proj4 {
+    grid-area: p4;
+}
+
+section#proj5 {
+    grid-area: p5;
+}
+
+section#proj6 {
+    grid-area: p6;
+}
+
+main {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'p1 p2 p3'
+    'p4 p5 p6';
+
+    
+
+}
+
+aside#x1 {
+    grid-area: mL;
+}
+
+aisde#x2 {
+    grid-area: mR;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    'mL intro mR'
+    'mL content mR';
+}
