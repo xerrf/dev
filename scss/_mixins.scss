@@ -1,5 +1,6 @@
 
 
+// sets a background image for the figure tags.
 @mixin thumbnail($img) {
     background-image: url($img);
     background-repeat: no-repeat;
@@ -7,6 +8,8 @@
     background-size: cover;
 }
 
+// sets up a flex box for content to be centered
+// vertically and horizontally. Mainly for text.
 @mixin flexCenter() {
     text-align: center;
     display: flex;
@@ -15,15 +18,10 @@
     justify-content: center;
 }
 
+// sets up the h2s for their hover state,
+// using custom color.
 @mixin hoverSetup($color) {
-    // content:'';
-    // position: relative;
-    // top: 0;
-    // left: 0;
-    // width: 100%;
-    // height: 100%;
     background-color: $color;
     opacity: 0;
     transition: opacity 0.5s;
-    // border-radius: 100px;
 }

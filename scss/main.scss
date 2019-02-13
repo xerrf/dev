@@ -4,6 +4,12 @@
 @import "mixins";
 @import "type";
 
+// Sylting for the imaegs and the h2s that are associated with them
+// size is partly set in the main.js
+// the same type of styling is applied to #proj$ with thumbnail and hoverSetup mixins
+
+// sets the size for the figure and the child h2. they are the same size. 
+// centered the text with flexCenter
 figure.square, h2.square {
     max-width: 100%;
     margin: 0em;
@@ -11,6 +17,7 @@ figure.square, h2.square {
     border-radius: 100px;
 }
 
+// 1st project
 #proj1 {
     figure {
         @include thumbnail("../img/bashThumbnail.png");
@@ -19,41 +26,45 @@ figure.square, h2.square {
         @include hoverSetup(gold);
     }
 }
-
 #proj1 h2:hover {
     opacity: 1;
 }
 
-// #proj1 > h2:hover {
-//     opacity: 1;
-// }
+//2nd project
+#proj2 {
+    figure {
+        @include thumbnail("../img/icon.png");
+    }
+    h2 {
+        @include hoverSetup(pink);
+    }
+}
+#proj2 h2:hover {
+    opacity: 1;
+}
 
-// #proj2 > h2 {
-//     @include thumbnail("../img/.png");
-// }
-// #proj2 > h2:after {
-//     @include hoverSetup(pink);
-// }
-// #proj2 > h2:hover:after {
-//     opacity: 1;
-// }
+//3rd project
+#proj3 {
+    figure {
+        @include thumbnail("../img/forest.jpg");
+    }
+    h2 {
+        @include hoverSetup(lightblue);
+    }
+}
+#proj3 h2:hover {
+    opacity: 1;
+}
 
-// #proj3 > h2 {
-//     @include thumbnail("../img/forest.jpg");
-// }
-// #proj3 > h2:after {
-//     @include hoverSetup(lightblue);
-// }
-// #proj3 > h2:hover:after {
-//     opacity: 1;
-// }
-
-// #proj4 > h2 {
-//     @include thumbnail("../img/bashThumbnail.png");
-// }
-// #proj4 > h2:after {
-//     @include hoverSetup(gold);
-// }
-// #proj4 > h2:hover:after {
-//     opacity: 1;
-// }
+// 4th project
+#proj4 {
+    figure {
+        @include thumbnail("../img/icon.png");
+    }
+    h2 {
+        @include hoverSetup(pink);
+    }
+}
+#proj4 h2:hover {
+    opacity: 1;
+}

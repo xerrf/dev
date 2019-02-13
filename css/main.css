@@ -96,4 +96,43 @@ figure.square, h2.square {
 #proj1 h2:hover {
   opacity: 1; }
 
+#proj2 figure {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+#proj2 h2 {
+  background-color: pink;
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+#proj2 h2:hover {
+  opacity: 1; }
+
+#proj3 figure {
+  background-image: url("../img/forest.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+#proj3 h2 {
+  background-color: lightblue;
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+#proj3 h2:hover {
+  opacity: 1; }
+
+#proj4 figure {
+  background-image: url("../img/icon.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+#proj4 h2 {
+  background-color: pink;
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+#proj4 h2:hover {
+  opacity: 1; }
+
 /*# sourceMappingURL=main.css.map */
