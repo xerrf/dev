@@ -2,30 +2,58 @@
 @import "layout";
 @import "base";
 @import "mixins";
+@import "type";
 
-// .box {
-//     max-width: 
-// }
-
-h2.square {
-    background-color: lightcyan;
+figure.square, h2.square {
     max-width: 100%;
     margin: 0em;
     @include flexCenter;
+    border-radius: 100px;
 }
 
-#proj1 >h2 {
-    @include thumbnail("../img/bashThumbnail.png");
+#proj1 {
+    figure {
+        @include thumbnail("../img/bashThumbnail.png");
+    }
+    h2 {
+        @include hoverSetup(gold);
+    }
 }
 
-h2#proj2 {
-    @include thumbnail("../img/.png");
+#proj1 h2:hover {
+    opacity: 1;
 }
 
-h2#proj3 {
-    @include thumbnail("../img/forest.jpg");
-}
+// #proj1 > h2:hover {
+//     opacity: 1;
+// }
 
-h2#proj4 {
-    @include thumbnail("../img/bashThumbnail.png");
-}
+// #proj2 > h2 {
+//     @include thumbnail("../img/.png");
+// }
+// #proj2 > h2:after {
+//     @include hoverSetup(pink);
+// }
+// #proj2 > h2:hover:after {
+//     opacity: 1;
+// }
+
+// #proj3 > h2 {
+//     @include thumbnail("../img/forest.jpg");
+// }
+// #proj3 > h2:after {
+//     @include hoverSetup(lightblue);
+// }
+// #proj3 > h2:hover:after {
+//     opacity: 1;
+// }
+
+// #proj4 > h2 {
+//     @include thumbnail("../img/bashThumbnail.png");
+// }
+// #proj4 > h2:after {
+//     @include hoverSetup(gold);
+// }
+// #proj4 > h2:hover:after {
+//     opacity: 1;
+// }

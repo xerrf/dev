@@ -5,6 +5,31 @@
     <link rel="stylesheet" href="css/mainHelper.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- fonts from type kit -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'fch8ugp',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+    <script>
+        (function(d) {
+        var config = {
+            kitId: 'fch8ugp',
+            scriptTimeout: 3000,
+            async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
+    <!-- jquery cdn -->
     <script
 			  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
@@ -13,14 +38,15 @@
 <body>
     <header>
         <h1>Benjamin Vernon</h1>
-        <p class="intro">creative developer tools portal</p>
+        <p id="intro">creative developer tools portal</p>
         <p class="links"><a href="https://github.com/xerrf">github</a><a href="../public_html/index.html">tam</a></p>
     </header>
     <main>
         <section id="proj1" class="box">
-            <h2 class="square"><a href="bash-me.html">Bash Me</a></h2>
+            <figure class="square">
+                <h2 class="square"><a href="bash-me.html">Bash Me</a></h2>
+            </figure>
             <p class="description">A simple web page made entirely from the bash console.</p>
-            <figure><img src="" alt=""></figure>
         </section>
         <section id="proj2" class="box">
             <h2 class="square"><a href="love-letters/index.html">Love Letters</a></h2>

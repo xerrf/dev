@@ -1,0 +1,23 @@
+@import "variables";
+
+h1 {
+    font-family: ta-rb, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 36pt;
+}
+
+h2 {
+    font-family: $slab;
+    font-size: 120%;
+}
+
+p {
+    font-family: $slab;
+    font-size: 10pt;
+}
+
+p#intro {
+    font-size: 12pt;
+}
+
