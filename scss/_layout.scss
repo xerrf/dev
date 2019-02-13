@@ -1,4 +1,7 @@
 
+// The header is a conponent of the page grid but 
+// it itself is a flexbox to space the content 
+// vertically and center it horizontally.
 header {
     grid-area: intro;
     display: flex;
@@ -7,20 +10,26 @@ header {
     justify-content: flex-start;
     align-items: center;
 
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    // this spaces out the two links
     p.links {
         display: flex;
         flex-wrap: nowrap;
-        flex-direction: row;
-        justify-content: center;
-        align-items: baseline;
-        align-content: space-between;
+        justify-content: space-around;
         margin: 0.25em;
         a {
-            margin: 0em 75%;
+            margin: 0em 25%;
         }
+    }
+    p#intro {
+        margin: 0px;
     }
 }
 
+//grid sections for the main grid
 section#proj1 {
     grid-area: p1;
 }
@@ -45,17 +54,20 @@ section#proj6 {
     grid-area: p6;
 }
 
+// main is a grid component fo the page grid with a 
+// grid inside of it. 
 main {
     grid-area: content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1.25em;
+    grid-column-gap: 1.5em;
     grid-template-rows: 1fr;
     grid-row-gap: 1.25em;
     grid-template-areas:
     'p1 p2 p3 p4';
 }
 
+//these asides are used as margins in the page grid
 aside#x1 {
     grid-area: mL;
 }
@@ -64,6 +76,7 @@ aisde#x2 {
     grid-area: mR;
 }
 
+// page grid defined
 body {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;

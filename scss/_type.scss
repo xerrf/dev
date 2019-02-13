@@ -1,15 +1,12 @@
 @import "variables";
 
 h1 {
-    font-family: ta-rb, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 36pt;
+   @include headerText;
 }
 
 h2 {
-    font-family: $slab;
-    font-size: 120%;
+    @include headerText;
+    font-size: 130%;
 }
 
 p {

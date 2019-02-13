@@ -4,6 +4,33 @@
 @import "mixins";
 @import "type";
 
+
+
+
+//
+header {
+    p.links {
+        // width: auto;
+        a {
+            color: red;
+            text-decoration: none;
+            padding: 0.25em;
+            box-sizing: border-box;
+        }
+        a:active{
+            color: red;
+            text-decoration: none;
+        }
+    }
+}
+
+header p a:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+
 // Sylting for the imaegs and the h2s that are associated with them
 // size is partly set in the main.js
 // the same type of styling is applied to #proj$ with thumbnail and hoverSetup mixins
@@ -23,7 +50,7 @@ figure.square, h2.square {
         @include thumbnail("../img/bashThumbnail.png");
     }
     h2 {
-        @include hoverSetup(gold);
+        @include hoverSetup($red);
     }
 }
 #proj1 h2:hover {
@@ -33,10 +60,10 @@ figure.square, h2.square {
 //2nd project
 #proj2 {
     figure {
-        @include thumbnail("../img/icon.png");
+        @include thumbnail("../img/loveThumb.png");
     }
     h2 {
-        @include hoverSetup(pink);
+        @include hoverSetup($yellow);
     }
 }
 #proj2 h2:hover {
@@ -49,7 +76,7 @@ figure.square, h2.square {
         @include thumbnail("../img/forest.jpg");
     }
     h2 {
-        @include hoverSetup(lightblue);
+        @include hoverSetup($green);
     }
 }
 #proj3 h2:hover {
@@ -62,9 +89,29 @@ figure.square, h2.square {
         @include thumbnail("../img/icon.png");
     }
     h2 {
-        @include hoverSetup(pink);
+        @include hoverSetup($blue);
     }
 }
 #proj4 h2:hover {
     opacity: 1;
+}
+
+// anchor tag styling
+h2 a {
+    color: $projLink;
+    text-decoration: none;
+}
+
+h2 a:active {
+    color: $projLink
+}
+
+// h2 a:hover {
+//     height: 50%;
+//     width: 100%;
+//     background-color: black;
+// }
+
+main p {
+    padding: 0em 0.25em;
 }

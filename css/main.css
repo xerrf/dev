@@ -5,16 +5,17 @@ header {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center; }
+  header h1 {
+    margin-bottom: 10px; }
   header p.links {
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: baseline;
-    align-content: space-between;
+    justify-content: space-around;
     margin: 0.25em; }
     header p.links a {
-      margin: 0em 75%; }
+      margin: 0em 25%; }
+  header p#intro {
+    margin: 0px; }
 
 section#proj1 {
   grid-area: p1; }
@@ -38,7 +39,7 @@ main {
   grid-area: content;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 1.25em;
+  grid-column-gap: 1.5em;
   grid-template-rows: 1fr;
   grid-row-gap: 1.25em;
   grid-template-areas: 'p1 p2 p3 p4'; }
@@ -63,8 +64,11 @@ h1 {
   font-size: 36pt; }
 
 h2 {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 120%; }
+  font-family: ta-rb, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36pt;
+  font-size: 130%; }
 
 p {
   font-family: "Courier New", Courier, monospace;
@@ -72,6 +76,20 @@ p {
 
 p#intro {
   font-size: 12pt; }
+
+header p.links a {
+  color: red;
+  text-decoration: none;
+  padding: 0.25em;
+  box-sizing: border-box; }
+header p.links a:active {
+  color: red;
+  text-decoration: none; }
+
+header p a:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s; }
 
 figure.square, h2.square {
   max-width: 100%;
@@ -89,7 +107,7 @@ figure.square, h2.square {
   background-position: center center;
   background-size: cover; }
 #proj1 h2 {
-  background-color: gold;
+  background-color: #FF8668;
   opacity: 0;
   transition: opacity 0.5s; }
 
@@ -97,12 +115,12 @@ figure.square, h2.square {
   opacity: 1; }
 
 #proj2 figure {
-  background-image: url("../img/icon.png");
+  background-image: url("../img/loveThumb.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
 #proj2 h2 {
-  background-color: pink;
+  background-color: #FFF158;
   opacity: 0;
   transition: opacity 0.5s; }
 
@@ -115,7 +133,7 @@ figure.square, h2.square {
   background-position: center center;
   background-size: cover; }
 #proj3 h2 {
-  background-color: lightblue;
+  background-color: #90C485;
   opacity: 0;
   transition: opacity 0.5s; }
 
@@ -128,11 +146,21 @@ figure.square, h2.square {
   background-position: center center;
   background-size: cover; }
 #proj4 h2 {
-  background-color: pink;
+  background-color: #8CCAFF;
   opacity: 0;
   transition: opacity 0.5s; }
 
 #proj4 h2:hover {
   opacity: 1; }
+
+h2 a {
+  color: #413939;
+  text-decoration: none; }
+
+h2 a:active {
+  color: #413939; }
+
+main p {
+  padding: 0em 0.25em; }
 
 /*# sourceMappingURL=main.css.map */
