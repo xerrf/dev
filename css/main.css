@@ -37,9 +37,10 @@ section#proj6 {
 main {
   grid-area: content;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 'p1 p2 p3' 'p4 p5 p6'; }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  grid-template-rows: 1fr;
+  grid-template-areas: 'p1 p2 p3 p4'; }
 
 aside#x1 {
   grid-area: mL; }
@@ -53,9 +54,38 @@ body {
   grid-template-rows: auto auto;
   grid-template-areas: 'mL intro mR' 'mL content mR'; }
 
-section h2 {
+h2.square {
   background-color: lightcyan;
-  height: 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  margin: 0em;
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center; }
+
+#proj1 > h2 {
+  background-image: url("../img/bashThumbnail.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+h2#proj2 {
+  background-image: url("../img/.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+h2#proj3 {
+  background-image: url("../img/forest.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+
+h2#proj4 {
+  background-image: url("../img/bashThumbnail.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
 
 /*# sourceMappingURL=main.css.map */

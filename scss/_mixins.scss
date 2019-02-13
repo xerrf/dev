@@ -1,9 +1,16 @@
 
 
-// @mixin thumbnail($img, $color) {
-//     background-image: url($img);
-//     background-repeat: no-repeat;
-//     background-position: center center;
-//     background-size: cover;
-//     background-color: $color;
-// }
+@mixin thumbnail($img) {
+    background-image: url($img);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+@mixin flexCenter() {
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+}

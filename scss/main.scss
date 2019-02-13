@@ -7,8 +7,25 @@
 //     max-width: 
 // }
 
-section h2 {
+h2.square {
     background-color: lightcyan;
-    height: 100%;
     max-width: 100%;
+    margin: 0em;
+    @include flexCenter;
+}
+
+#proj1 >h2 {
+    @include thumbnail("../img/bashThumbnail.png");
+}
+
+h2#proj2 {
+    @include thumbnail("../img/.png");
+}
+
+h2#proj3 {
+    @include thumbnail("../img/forest.jpg");
+}
+
+h2#proj4 {
+    @include thumbnail("../img/bashThumbnail.png");
 }
