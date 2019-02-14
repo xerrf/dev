@@ -12,21 +12,21 @@ header {
     p.links {
         // width: auto;
         a {
-            color: red;
+            color: $rgbRed;
             text-decoration: none;
             padding: 0.25em;
             box-sizing: border-box;
         }
         a:active{
-            color: red;
+            color: $rgbRed;
             text-decoration: none;
         }
     }
 }
 
 header p a:hover {
-    background-color: black;
-    color: white;
+    background-color: $white;
+    color: $black;
     transition: background-color 0.5s;
 }
 
@@ -98,20 +98,19 @@ figure.square, h2.square {
 
 // anchor tag styling
 h2 a {
-    color: $projLink;
+    color: $black;
     text-decoration: none;
 }
 
 h2 a:active {
-    color: $projLink
+    color: $black
 }
 
-// h2 a:hover {
-//     height: 50%;
-//     width: 100%;
-//     background-color: black;
-// }
-
-main p {
-    padding: 0em 0.25em;
+main {
+    h2 {
+        color: $white;
+    }
+    p {
+        padding: 0em 0.25em;
+    }
 }
