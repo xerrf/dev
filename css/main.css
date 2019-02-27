@@ -17,6 +17,15 @@ header {
   header p#intro {
     margin: 0px; }
 
+main {
+  grid-area: content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 1.5em;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 1.25em;
+  grid-template-areas: 'p1 p2 p3 p4' 'p5 . . . '; }
+
 section#proj1 {
   grid-area: p1; }
 
@@ -31,18 +40,6 @@ section#proj4 {
 
 section#proj5 {
   grid-area: p5; }
-
-section#proj6 {
-  grid-area: p6; }
-
-main {
-  grid-area: content;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 1.5em;
-  grid-template-rows: 1fr;
-  grid-row-gap: 1.25em;
-  grid-template-areas: 'p1 p2 p3 p4'; }
 
 aside#x1 {
   grid-area: mL; }
@@ -59,29 +56,6 @@ body {
 
 body {
   background-color: black; }
-
-h1, p {
-  color: white; }
-
-h1 {
-  font-family: ta-rb, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 36pt; }
-
-h2 {
-  font-family: ta-rb, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 36pt;
-  font-size: 130%; }
-
-p {
-  font-family: "Courier New", Courier, monospace;
-  font-size: 10pt; }
-
-p#intro {
-  font-size: 12pt; }
 
 header p.links a {
   color: red;
@@ -147,7 +121,7 @@ figure.square, h2.square {
   opacity: 1; }
 
 #proj4 figure {
-  background-image: url("../img/icon.png");
+  background-image: url("../img/spriteSheetThumb.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; }
@@ -157,6 +131,19 @@ figure.square, h2.square {
   transition: opacity 0.5s; }
 
 #proj4 h2:hover {
+  opacity: 1; }
+
+#proj5 figure {
+  background-image: url("../img/animationThumb.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; }
+#proj5 h2 {
+  background-color: #8CCAFF;
+  opacity: 0;
+  transition: opacity 0.5s; }
+
+#proj5 h2:hover {
   opacity: 1; }
 
 h2 a {
@@ -170,5 +157,28 @@ main h2 {
   color: white; }
 main p {
   padding: 0em 0.25em; }
+
+h1, p {
+  color: white; }
+
+h1 {
+  font-family: ta-rb, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36pt; }
+
+h2 {
+  font-family: ta-rb, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36pt;
+  font-size: 130%; }
+
+p {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10pt; }
+
+p#intro {
+  font-size: 12pt; }
 
 /*# sourceMappingURL=main.css.map */

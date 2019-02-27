@@ -1,0 +1,3 @@
+[submodule "SpriteSheets"]
+	path = SpriteSheets
+	url = https://github.com/xerrf/SpriteSheets.git
