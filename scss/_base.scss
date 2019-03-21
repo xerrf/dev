@@ -110,6 +110,20 @@ p.description {
     opacity: 1;
 }
 
+// 6th project
+#proj6 {
+    figure {
+        @include thumbnail("../img/parallaxThumb.png");
+    }
+    h2 {
+        @include hoverSetup($green);
+    }
+}
+
+#proj6 h2:hover {
+    opacity: 1;
+}
+
 // anchor tag styling
 h2 a {
     color: $black;

@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136103688-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136103688-1');
+    </script>
+
+    <!-- Other -->
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/mainHelper.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
 
     <!-- fonts from type kit -->
-    <script>
+    <script defer>
         (function(d) {
           var config = {
             kitId: 'fch8ugp',
@@ -18,7 +29,7 @@
         })(document);
       </script>
 
-    <script>
+    <script defer>
         (function(d) {
         var config = {
             kitId: 'fch8ugp',
@@ -33,8 +44,9 @@
     <script
 			  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-			  crossorigin="anonymous"></script>
+              crossorigin="anonymous"></script>
 </head>
+
 <body>
     <header>
         <h1>Benjamin Vernon</h1>
@@ -71,6 +83,12 @@
                 <h2 class="square"><a href="sheetAnimation/index.html">Sprite Sheet Animation</a></h2>
             </figure>
             <p class="description">Using compass to animate from a sprite sheet.</p>
+        </section>
+        <section id="proj6" class="box">
+            <figure class="square">
+                <h2 class="square"><a href="parallax/index.html">Parallax</a></h2>
+            </figure>
+            <p class="description">A narrative with a focus on the parallax scrolling effect.</p>
         </section>
     </main>
     <aside id="x1"></aside>

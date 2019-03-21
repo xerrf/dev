@@ -4,18 +4,23 @@ header {
   flex-wrap: nowrap;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center; }
-  header h1 {
-    margin-bottom: 10px; }
-  header p.links {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    margin: 0.25em; }
-    header p.links a {
-      margin: 0em 25%; }
-  header p#intro {
-    margin: 0px; }
+  align-items: center;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+header p.links {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 0.25em;
+}
+header p.links a {
+  margin: 0em 25%;
+}
+header p#intro {
+  margin: 0px;
+}
 
 main {
   grid-area: content;
@@ -24,52 +29,65 @@ main {
   grid-column-gap: 1.5em;
   grid-template-rows: auto auto;
   grid-row-gap: 1.25em;
-  grid-template-areas: 'p1 p2 p3 p4' 'p5 . . . '; }
+  grid-template-areas: 'p1 p2 p3 p4' 'p5 . . . ';
+}
 
 section#proj1 {
-  grid-area: p1; }
+  grid-area: p1;
+}
 
 section#proj2 {
-  grid-area: p2; }
+  grid-area: p2;
+}
 
 section#proj3 {
-  grid-area: p3; }
+  grid-area: p3;
+}
 
 section#proj4 {
-  grid-area: p4; }
+  grid-area: p4;
+}
 
 section#proj5 {
-  grid-area: p5; }
+  grid-area: p5;
+}
 
 aside#x1 {
-  grid-area: mL; }
+  grid-area: mL;
+}
 
 aisde#x2 {
-  grid-area: mR; }
+  grid-area: mR;
+}
 
 body {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: auto auto;
   grid-row-gap: 2em;
-  grid-template-areas: 'mL intro mR' 'mL content mR'; }
+  grid-template-areas: 'mL intro mR' 'mL content mR';
+}
 
 body {
-  background-color: black; }
+  background-color: black;
+}
 
 header p.links a {
   color: red;
   text-decoration: none;
   padding: 0.25em;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 header p.links a:active {
   color: red;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 header p a:hover {
   background-color: white;
   color: black;
-  transition: background-color 0.5s; }
+  transition: background-color 0.5s;
+}
 
 figure.square, h2.square {
   max-width: 100%;
@@ -79,109 +97,149 @@ figure.square, h2.square {
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
-  border-radius: 100px; }
+  border-radius: 100px;
+}
 
 p.description {
-  height: auto; }
+  height: auto;
+}
 
 #proj1 figure {
   background-image: url("../img/bashThumbnail.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+}
 #proj1 h2 {
   background-color: #FF8668;
   opacity: 0;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+}
 
 #proj1 h2:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 #proj2 figure {
   background-image: url("../img/loveThumb.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+}
 #proj2 h2 {
   background-color: #FFF158;
   opacity: 0;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+}
 
 #proj2 h2:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 #proj3 figure {
   background-image: url("../img/forest.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+}
 #proj3 h2 {
   background-color: #90C485;
   opacity: 0;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+}
 
 #proj3 h2:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 #proj4 figure {
   background-image: url("../img/spriteSheetThumb.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+}
 #proj4 h2 {
   background-color: #8CCAFF;
   opacity: 0;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+}
 
 #proj4 h2:hover {
-  opacity: 1; }
+  opacity: 1;
+}
 
 #proj5 figure {
   background-image: url("../img/animationThumb.png");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover; }
+  background-size: cover;
+}
 #proj5 h2 {
   background-color: #8CCAFF;
   opacity: 0;
-  transition: opacity 0.5s; }
+  transition: opacity 0.5s;
+}
 
 #proj5 h2:hover {
-  opacity: 1; }
+  opacity: 1;
+}
+
+#proj6 figure {
+  background-image: url("../img/parallaxThumb.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+#proj6 h2 {
+  background-color: #90C485;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#proj6 h2:hover {
+  opacity: 1;
+}
 
 h2 a {
   color: black;
-  text-decoration: none; }
+  text-decoration: none;
+}
 
 h2 a:active {
-  color: black; }
+  color: black;
+}
 
 main h2 {
-  color: white; }
+  color: white;
+}
 main p {
-  padding: 0em 0.25em; }
+  padding: 0em 0.25em;
+}
 
 h1, p {
-  color: white; }
+  color: white;
+}
 
 h1 {
   font-family: ta-rb, sans-serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 36pt; }
+  font-size: 36pt;
+}
 
 h2 {
   font-family: ta-rb, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 36pt;
-  font-size: 130%; }
+  font-size: 130%;
+}
 
 p {
   font-family: "Courier New", Courier, monospace;
-  font-size: 10pt; }
+  font-size: 10pt;
+}
 
 p#intro {
-  font-size: 12pt; }
-
-/*# sourceMappingURL=main.css.map */
+  font-size: 12pt;
+}

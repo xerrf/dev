@@ -21,6 +21,7 @@ $(document).ready(function (){
     // Event listeners used to link to the project pages. 
     // These are used so the user does not need to click the exact <a> tag, 
     // but can click on its parent element. The hover state might signify this.
+    // I target only the even sections because each h2 also has a class of "square"
     sections[0].addEventListener("click", function() {
         redirect("bash-me.html");
     });
@@ -44,4 +45,8 @@ $(document).ready(function (){
         // console.log("El 6: sprite.");
         redirect("sheetAnimation/index.html");
     });
+
+    sections[10].addEventListener("click", function() {
+        redirect("parallax/index.html");
+    } )
 });
