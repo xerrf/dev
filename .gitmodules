@@ -1,3 +1,6 @@
 [submodule "SpriteSheets"]
 	path = SpriteSheets
 	url = https://github.com/xerrf/SpriteSheets.git
+[submodule "a-frame"]
+	path = a-frame
+	url = https://github.com/xerrf/a-frame.git
