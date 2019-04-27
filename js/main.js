@@ -58,10 +58,10 @@ $(document).ready(function (){
     });
 
     sections[12].addEventListener("click", function() {
-        redirect("vr-sound/index.html");
+        redirect("boilerplatter/index.html");
     });
 
     sections[14].addEventListener("click", function() {
-        redirect("../index.html");
+        redirect("vr-sound/index.html");
     });
 });

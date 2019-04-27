@@ -135,7 +135,7 @@ p.description {
 
 #proj7 {
     figure {
-        @include thumbnail("../img/vr-soundThumb.png");
+        @include thumbnail("../img/platterThumb.png");
     }
     h2 {
         @include hoverSetup($yellow);
@@ -148,7 +148,7 @@ p.description {
 
 #proj8 {
     figure {
-        @include thumbnail("../img/tamThumb.png");
+        @include thumbnail("../img/vr-soundThumb.png");
     }
     h2 {
         @include hoverSetup($red);
