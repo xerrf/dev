@@ -34,11 +34,20 @@ header p a:hover {
 
 // sets the size for the figure and the child h2. they are the same size. 
 // centered the text with flexCenter
+
+section {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 figure.square, h2.square {
     max-width: 100%;
     margin: 0em;
     @include flexCenter;
-    border-radius: 100px;
+    border-radius: 100%;
 }
 
 p.description {
@@ -121,6 +130,32 @@ p.description {
 }
 
 #proj6 h2:hover {
+    opacity: 1;
+}
+
+#proj7 {
+    figure {
+        @include thumbnail("../img/vr-soundThumb.png");
+    }
+    h2 {
+        @include hoverSetup($yellow);
+    }
+}
+
+#proj7 h2:hover {
+    opacity: 1;
+}
+
+#proj8 {
+    figure {
+        @include thumbnail("../img/tamThumb.png");
+    }
+    h2 {
+        @include hoverSetup($red);
+    }
+}
+
+#proj8 h2:hover {
     opacity: 1;
 }
 

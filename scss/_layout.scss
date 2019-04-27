@@ -4,6 +4,7 @@
 // vertically and center it horizontally.
 header {
     grid-area: intro;
+    text-align: center;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -31,17 +32,6 @@ header {
  
 // main is a grid component fo the page grid with a 
 // grid inside of it. 
-main {
-    grid-area: content;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 1.5em;
-    grid-template-rows: auto auto;
-    grid-row-gap: 1.25em;
-    grid-template-areas:
-    'p1 p2 p3 p4'
-    'p5 . . . ';
-}
 
 //grid sections for the main grid
 section#proj1 {
@@ -64,9 +54,17 @@ section#proj5 {
     grid-area: p5;
 }
 
-// section#proj6 {
-//     grid-area: p6;
-// }
+section#proj6 {
+    grid-area: p6;
+}
+
+section#proj7 {
+    grid-area: p7;
+}
+
+section#proj8 {
+    grid-area: p8;
+}
 
 //these asides are used as margins in the page grid
 aside#x1 {
@@ -77,13 +75,79 @@ aisde#x2 {
     grid-area: mR;
 }
 
-// page grid defined
+// mobile grid defined
+
+main {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1.5em;
+    grid-template-rows: auto;
+    grid-row-gap: 1.25em;
+    grid-template-areas:
+    'p1 p2'
+    'p3 p4'
+    'p5 p6'
+    'p7 p8';
+}
+
 body {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 7fr 1fr;
+    grid-template-rows: auto;
     grid-row-gap: 2em;
     grid-template-areas:
     'mL intro mR'
     'mL content mR';
 }
+
+@media only screen and (min-width: 800px) {
+    main {
+        grid-area: content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 1.5em;
+        grid-template-rows: auto;
+        grid-row-gap: 1.25em;
+        grid-template-areas:
+        'p1 p2 p3'
+        'p4 p5 p6'
+        'p7 p8 .';
+    }
+    body {
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 2em;
+        grid-template-areas:
+        'mL intro mR'
+        'mL content mR';
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        grid-area: content;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 1.5em;
+        grid-template-rows: auto;
+        grid-row-gap: 1.25em;
+        grid-template-areas:
+        'p1 p2 p3 p4'
+        'p5 p6 p7 p8';
+    }
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 2em;
+        grid-template-areas:
+        'mL intro mR'
+        'mL content mR';
+    }
+}
+
+
+

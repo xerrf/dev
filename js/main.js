@@ -1,22 +1,29 @@
 $(document).ready(function (){
+    console.log("In main.js");
 
-    //Makes the height of an element match its width. Used for the figure, h2, and p elements within main
-    $(function() {
-        var dynamicBox = $(".square");
-        var width = dynamicBox.width();
+    // Initialize the height of an element match its width. Used for the figure, h2, and p elements within main
+    dynamifyBoxes();
 
-        dynamicBox.css("height", width);
-        $("h2.square").css("width", width); //makes it so h2 size is the same as the figure behind it
-    })
+    // this function matches an element's hieght and width, used for the figure, h2, and p elements within main.
+    function dynamifyBoxes() {
+        let dynamicBox = $("section.box");
+        let length = dynamicBox.width();
+        //console.log(length);
+
+        $("figure.square").css("height", length);
+        $("figure.square").css("width", length);
+        $("h2.square").css("height", length);
+        $("h2.square").css("width", length);
+    }
+    
+    // redirectes to argument url
+    function redirect(url) {
+        window.location = url;
+    }
 
     // NOTE: Since there are two class="square" per section, I only want to isolate the first in each section.
     // This mean that I will be using even numbers starting from 0 (0, 2, 4, 6 ...)
     var sections = document.getElementsByClassName("square");
-    
-
-    function redirect(url) {
-        window.location = url;
-    }
 
     // Event listeners used to link to the project pages. 
     // These are used so the user does not need to click the exact <a> tag, 
@@ -48,5 +55,13 @@ $(document).ready(function (){
 
     sections[10].addEventListener("click", function() {
         redirect("parallax/index.html");
-    } )
+    });
+
+    sections[12].addEventListener("click", function() {
+        redirect("vr-sound/index.html");
+    });
+
+    sections[14].addEventListener("click", function() {
+        redirect("../index.html");
+    });
 });
