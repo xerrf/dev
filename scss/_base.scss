@@ -41,6 +41,23 @@ section {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    a.links {
+        color: $rgbRed;
+        text-decoration: none;
+        padding: 0.25em;
+        box-sizing: border-box;
+    }
+    a.links:active{
+        color: $rgbRed;
+        text-decoration: none;
+    }
+
+    a.links:hover {
+       // background-color: $white;
+        color: $white;
+        //transition: background-color 0.5s;
+    }
 }
 
 figure.square, h2.square {

@@ -147,6 +147,19 @@ section {
   justify-content: flex-start;
   align-items: center;
 }
+section a.links {
+  color: red;
+  text-decoration: none;
+  padding: 0.25em;
+  box-sizing: border-box;
+}
+section a.links:active {
+  color: red;
+  text-decoration: none;
+}
+section a.links:hover {
+  color: white;
+}
 
 figure.square, h2.square {
   max-width: 100%;
